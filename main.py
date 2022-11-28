@@ -24,12 +24,18 @@ while True:
         break
 
 os.system('clear')
+
+
+
 print("Writing practice\n")
 
 print("Write 3 sentences for each word.")
 
 for word in words_list:
     print(f'\nThe word is {word}')
+
+    #Word definition / translation 
+    os.system(f'xfce4-terminal --geometry 65x30+1600+200 -e "bash /home/mark/Desktop/Programming/python/English_con/English_con/Bash-translator.sh {word}"')
 
     sentence = 0
 
